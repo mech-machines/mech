@@ -1,0 +1,7 @@
+# mech/test
+
+Every test has a name and expected result. The expected result is compared against the evaluated (actual) result. The result column holds the result of the comparison. 
+  #mech/test = [|name expected actual result|]
+
+Compares the expected and actual results of the test table.
+  #mech/test.result := #mech/test.expected == #mech/test.actual
