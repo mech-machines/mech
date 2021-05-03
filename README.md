@@ -7,7 +7,7 @@ Read about progress on our [blog](http://mech-lang.org/blog/), follow us on Twit
 ## Provided Tables
 
 - `#mech/test[|name expected actual result|]`
-- `#mech/compiler[|code|]`
+- `#mech/compiler[|core code|]`
 
 ## License
 
