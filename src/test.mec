@@ -4,4 +4,45 @@ Every test has a name and expected result. The expected result is compared again
   #mech/test = [|name expected actual result|]
 
 Compares the expected and actual results of the test table.
+  ~ #mech/test.actual
   #mech/test.result := #mech/test.expected == #mech/test.actual
+
+Determine if all of the tests have passed
+  #mech/test/result = set/all(column: #mech/test.result)
+
+## Do some tests
+
+block
+  #mech/test += ["Test 1" 0 1 - 1]
+
+block
+  #mech/test += ["Test 2" 2 1 + 1]
+
+block
+  #mech/test += ["Test 3" 0 1 + 1]
+
+
+## Print the tests
+
+block
+  #mech/test/output = [|name result color|]
+
+block
+  #mech/test/output.name := #mech/test.name
+  ix = #mech/test.result == true
+  ixx = #mech/test.result == false
+  #mech/test/output.result{ix} := "ok"
+  #mech/test/output.color{ix} := 0x00D000
+  #mech/test/output.result{ixx} := "failed"
+  #mech/test/output.color{ixx} := 0xD00000
+
+block
+  test-name-output = [#mech/test/output.name 0xD0D0D0]
+  test-result-output = [#mech/test/output.result #mech/test/output.color]
+  #io-streams/out := [test-name-output
+                      test-result-output]
+  #mech/test/done = #mech/test/result
+
+block
+  #system/exit := #mech/test/done
+
