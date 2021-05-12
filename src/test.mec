@@ -4,5 +4,4 @@ Every test has a name and expected result. The expected result is compared again
   #mech/test = [|name expected actual result|]
 
 Compares the expected and actual results of the test table.
-  ~ #mech/test.actual
   #mech/test.result := #mech/test.expected == #mech/test.actual
