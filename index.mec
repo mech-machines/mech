@@ -1,0 +1,20 @@
+# mech
+
+## Description
+
+Standard tables for Mech language internals
+
+## Provided Tables
+
+- `#mech/test[|name expected actual result|]` - A testing framework
+- `#mech/compiler[|core code|]` - Compile code into blocks
+- `#mech/registry[|name version url|]` - A listing of all available Mech machines
+
+## Info
+
+  #io/machine = [
+    name: "mech" 
+    version: "v0.0.1"
+    authors: "Corey Montella" 
+    url: "https://gitlab/com/mech-lang/machines/mech"
+    license: "Apache-2.0"]
