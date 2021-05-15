@@ -8,6 +8,7 @@ Read about progress on our [blog](http://mech-lang.org/blog/), follow us on Twit
 
 - `#mech/test[|name expected actual result|]`
 - `#mech/compiler[|core code|]`
+- `#mech/registry[|name version url|]`
 
 ## License
 

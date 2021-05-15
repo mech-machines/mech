@@ -1,0 +1,16 @@
+# Mech machines registry
+
+This is a listing of all available machines
+  #mech/registry = [|name          version url|
+                     "math"        "0.0.1" "https://github.com/mech-machines/math/releases/download/v0.0.1/"
+                     "stats"       "0.0.1" "https://github.com/mech-machines/stats/releases/download/v0.0.1/"
+                     "time"        "0.0.1" "https://github.com/mech-machines/time/releases/download/v0.0.1/"
+                     "random"      "0.0.1" "https://github.com/mech-machines/random/releases/download/v0.0.1/"
+                     "system"      "0.0.1" "https://github.com/mech-machines/system/releases/download/v0.0.1/"
+                     "io"          "0.0.1" "https://github.com/mech-machines/io/releases/download/v0.0.1/"
+                     "string"      "0.0.1" "https://github.com/mech-machines/string/releases/download/v0.0.1/"
+                     "set"         "0.0.1" "https://github.com/mech-machines/set/releases/download/v0.0.1/"
+                     "mech"        "0.0.1" "https://github.com/mech-machines/mech/releases/download/v0.0.1/"
+                     "http"        "0.0.1" "https://github.com/mech-machines/http/releases/download/v0.0.1/"
+                     "file"        "0.0.1" "https://github.com/mech-machines/file/releases/download/v0.0.1/"]
+                     
