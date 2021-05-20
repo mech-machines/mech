@@ -9,6 +9,7 @@ Standard tables for Mech language internals
 - `#mech/test[|name expected actual result|]` - A testing framework
 - `#mech/compiler[|core code|]` - Compile code into blocks
 - `#mech/registry[|name version url|]` - A listing of all available Mech machines
+- `#mech/cores[|name address|]` - A listing of all available Mech cores in the network
 
 ## Info
 
