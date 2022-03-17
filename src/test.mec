@@ -22,5 +22,14 @@ Print output
               #test/failed
               "╰──────────────────────────────╯"]
 
+Tally up the tests
+  passed = table/size(table: #test/passed)
+  total  = table/size(table: #test)
+  failed = total - passed
+  #test/result = [passed: passed{1}, failed: failed{1}, total: total{1}]
+
+Set a flag to indicate success or failure
+  #test/success = #test/result.passed == #test/result.total
+
 The exit code is the number of failed tests. 0 indicate success!
   #system/exit += #test/result.failed
