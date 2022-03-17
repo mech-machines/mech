@@ -1,7 +1,26 @@
 # mech/test
 
 Every test has a name and expected result. The expected result is compared against the evaluated (actual) result. The result column holds the result of the comparison. 
-  #mech/test = [|name expected actual result|]
+  #test = [|name<string> expected<_> actual<_>|]
 
 Compares the expected and actual results of the test table.
-  #mech/test.result := #mech/test.expected == #mech/test.actual
+  #test/results = #test.expected == #test.actual
+
+Aggregate test result
+  passed = #test/results == true
+  #test/passed = #test.name{passed}
+  #test/failed = #test.name{!passed}
+
+Print output
+  #io/out += ["╭──────────────────────────────╮"
+              "│ ✅ Passed                    │"
+              "├──────────────────────────────┤"
+              #test/passed
+              "├──────────────────────────────┤"
+              "│ ❌ Failed                    │"
+              "├──────────────────────────────┤"
+              #test/failed
+              "╰──────────────────────────────╯"]
+
+The exit code is the number of failed tests. 0 indicate success!
+  #system/exit += #test/result.failed
