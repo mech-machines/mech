@@ -1,4 +1,5 @@
-# mech/test
+mech/test
+==========
 
 Every test has a name and expected result. The expected result is compared against the evaluated (actual) result. The result column holds the result of the comparison. 
   #test = [|name<string> expected<_> actual<_>|]

@@ -1,4 +1,5 @@
-# Mech machines registry
+Mech machines registry
+=======================
 
 This is a listing of all available machines
   #mech/registry = [|name          version url|
