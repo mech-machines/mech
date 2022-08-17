@@ -16,7 +16,7 @@ export_machine!(mech_compile, mech_compile_reg);
 
 extern "C" fn mech_compile_reg(registrar: &mut dyn MachineRegistrar, outgoing: Sender<RunLoopMessage>) -> String {
   registrar.register_machine(Box::new(Compile{outgoing}));
-  "#mech/compile = [|core code|]".to_string()
+  "#mech/compile = [|core<u64> code<string>|]".to_string()
 }
 
 #[derive(Debug)]
