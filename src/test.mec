@@ -8,9 +8,8 @@ Compares the expected and actual results of the test table.
   #test/results = #test.expected == #test.actual
 
 Aggregate test result
-  passed = #test/results == true
-  #test/passed = #test.name{passed}
-  #test/failed = #test.name{!passed}
+  #test/passed = #test.name{#test/results}
+  #test/failed = #test.name{!#test/results}
 
 Print output
   #io/out += ["╭──────────────────────────────╮"
