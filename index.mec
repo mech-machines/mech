@@ -9,17 +9,16 @@ Standard tables for Mech language internals
 2. Provided Tables
 -------------------
 
-- `#mech/test[|name expected actual result|]` - A testing framework
-- `#mech/compiler[|core<u64> code<string>|]` - Compile code into blocks
+- `#mech/compiler[|code<string>|]` - Compile code into blocks
 - `#mech/registry[|name<string> version<string> url<string>|]` - A listing of all available Mech machines
 - `#mech/cores[|name<string> id<u64> address<string>|]` - A listing of all available Mech cores in the network
 
 3. Info
 --------
 
-  #io/machine = [
-    name: "mech" 
-    version: "v0.0.1"
-    authors: "Corey Montella" 
-    url: "https://gitlab/com/mech-lang/machines/mech"
-    license: "Apache-2.0"]
+#io/machine = [
+  name: "mech" 
+  version: "v0.0.1"
+  authors: "Corey Montella" 
+  url: "https://gitlab.com/mech-lang/machines/mech"
+  license: "Apache-2.0"]
