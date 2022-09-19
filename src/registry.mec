@@ -16,5 +16,6 @@ This is a listing of all available machines
                   "http"        "0.0.1" "https://github.com/mech-machines/http/releases/download/v0.0.1/"
                   "file"        "0.0.1" "https://github.com/mech-machines/file/releases/download/v0.0.1/"
                   "html"        "0.0.1" "https://github.com/mech-machines/html/releases/download/v0.0.1/"
-                  "gui"         "0.0.1" "https://github.com/mech-machines/gui/releases/download/v0.0.1/"]
+                  "gui"         "0.0.1" "https://github.com/mech-machines/gui/releases/download/v0.0.1/"
+                  "matrix"      "0.0.1" "https://github.com/mech-machines/matrix/releases/download/v0.0.1/"]
                   
